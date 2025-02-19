@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "firstmod",
+	"version": "${version}",
+	"name": "FirstMod",
+	"description": "Wu Hong Ann is GAEEEEE",
+	"authors": [
+		"Apolo_qwq"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Poloqwq/FirstMod"
+	},
+	"license": "MIT",
+	"icon": "assets/firstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.apolo.firstmod.FirstMod"
+		],
+		"fabric-datagen": [
+			"net.apolo.firstmod.FirstModDataGenerator"
+		],
+		"client": [
+			"net.apolo.firstmod.FirstModClient"
+		]
+	},
+	"mixins": [
+		"firstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
